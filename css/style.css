@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato/lato-regular-webfont.eot");
+  src: url("../fonts/lato/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/Lato-Regular.ttf") format("truetype"), url("../fonts/lato/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato/lato-black-webfont.eot");
+  src: url("../fonts/lato/lato-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-black-webfont.woff") format("woff"), url("../fonts/lato/lato-black-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato/lato-bold-webfont.eot");
+  src: url("../fonts/lato/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-bold-webfont.woff") format("woff"), url("../fonts/lato/lato-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'bellefairregular';
+  src: url("../fonts/lato/bellefair-regular-webfont.eot");
+  src: url("../fonts/lato/bellefair-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/bellefair-regular-webfont.woff") format("woff"), url("../fonts/lato/bellefair-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background-color: #ebe7de;
+  font-family: latoregular; }
+
+.padding-y {
+  padding: 50px 0; }
+
+.padding-x {
+  padding: 0 90px; }
+
+h3 {
+  color: #c39e61;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: latoblack; }
+
+h2 {
+  font-family: bellefairregular;
+  text-transform: uppercase;
+  color: #c39e61; }
+
+h1 {
+  color: #583520;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: latoblack; }
+
+.heading {
+  padding-bottom: 30px; }
+  .heading img {
+    width: 80px; }
+
+.site-container {
+  background: url("../img/featured/large/home.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-attachment: fixed; }
+
+.about-container {
+  background: url("../img/featured/large/about.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-attachment: fixed; }
+
+.contact-container, .menu-container {
+  background: url("../img/featured/large/contact.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-attachment: fixed; }
+
+.header-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
+
+.top-section .navbar .navbar-brand img {
+  width: 250px; }
+.top-section .navbar .nav-item a {
+  text-transform: uppercase;
+  color: #fff !important;
+  font-family: latobold;
+  position: relative;
+  display: block;
+  padding: 30px 0;
+  margin: 0 20px;
+  letter-spacing: 1px;
+  transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+  color: #fff; }
+.top-section .navbar ::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: center;
+  transform: scale(0, 1);
+  transition: color 0.1s,transform 0.2s ease-out; }
+.top-section .navbar .nav-item a:hover::before, .top-section .navbar .nav-item a:focus::before {
+  transform-origin: center;
+  transform: scale(1, 1); }
+
+.bottom-section {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 5%; }
+  .bottom-section h1 {
+    color: #fff;
+    font-size: 70px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0 auto; }
+  .bottom-section .fa {
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    border: 2px solid #583520;
+    background-color: #583520;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 25px; }
+    .bottom-section .fa:hover {
+      background-color: #c39e61;
+      color: #fff;
+      transition: 0.5s;
+      border: 2px solid #583520; }
+
+.body-content {
+  text-align: center; }
+  .body-content .body-meat {
+    background-color: #fff;
+    color: #583520;
+    margin-top: -10%; }
+  .body-content .aboutus-meat {
+    font-weight: 600;
+    line-height: 2; }
+  .body-content .aboutus-meat-img {
+    margin: 10% 0;
+    box-shadow: 10px 10px 10px #583520; }
+  .body-content .aboutus-meat-quote {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 150%;
+    padding: 20px;
+    border-left: 3px solid #583520;
+    margin: 20px 0;
+    text-align: left; }
+  .body-content .aboutus-meat-align {
+    text-align: justify; }
+  .body-content .icon-name {
+    font-family: bellefairregular;
+    font-size: 35px; }
+  .body-content .card img {
+    width: 100%; }
+  .body-content form {
+    text-align: left;
+    font-family: latobold;
+    text-transform: uppercase; }
+    .body-content form input, .body-content form select {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 5px solid #583520;
+      transition: 0.5s ease-in-out; }
+      .body-content form input:focus, .body-content form select:focus {
+        outline: none;
+        box-shadow: 5px 5px 1px #cacaca;
+        transition: 0.5s ease-in-out; }
+    .body-content form .submit {
+      background-color: #583520;
+      color: #fff;
+      text-transform: uppercase;
+      transition: 0.5s; }
+      .body-content form .submit:hover {
+        background-color: #c39e61;
+        cursor: pointer; }
+
+.menu {
+  background: url("../img/menu.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  background-attachment: fixed; }
+  .menu:before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(104, 58, 25, 0.8); }
+  .menu .menu-body {
+    position: relative;
+    text-align: center; }
+    .menu .menu-body h1, .menu .menu-body h3 {
+      color: #fff; }
+  .menu table th {
+    text-align: center;
+    font-family: latoblack; }
+  .menu table th, .menu table td {
+    padding: 10px;
+    list-style: none; }
+  .menu table .col-item {
+    width: 60%;
+    text-transform: uppercase;
+    font-size: 33px; }
+  .menu table .col-price {
+    width: 30%; }
+  .menu table .item {
+    text-transform: uppercase;
+    font-family: latobold;
+    font-size: 20px; }
+  .menu table .spanawf {
+    text-transform: none;
+    color: #c39e61;
+    font-family: latoregular;
+    font-size: 16px;
+    margin-top: -5px; }
+  .menu table .price {
+    font-size: 35px;
+    font-family: latoblack;
+    text-align: center; }
+
+#testimonial {
+  text-align: center; }
+  #testimonial .testimonial-body {
+    background-color: #fff;
+    color: #583520; }
+  #testimonial .testimonial-content {
+    border-left: 10px solid #583520; }
+    #testimonial .testimonial-content .fa {
+      color: #583520;
+      font-size: 25px; }
+  #testimonial .carousel-item {
+    height: 250px;
+    background-color: #ebe7de; }
+    #testimonial .carousel-item .carousel-caption {
+      color: #000;
+      text-align: start;
+      font-size: 20px; }
+      #testimonial .carousel-item .carousel-caption .author {
+        font-weight: 600; }
+
+footer {
+  text-align: center;
+  background-color: #583520; }
+  footer .footer-body {
+    background-color: #fff;
+    padding: 40px 0 60px 0; }
+    footer .footer-body ul {
+      list-style: none;
+      padding-left: 0px;
+      font-weight: 600;
+      font-size: 18px; }
+  footer .bot-footer {
+    padding: 20px;
+    color: #fff;
+    font-size: 20px; }
+
+@media screen and (max-width: 1024px) {
+  .navbar-brand img {
+    width: 200px !important; }
+
+  .top-section .navbar .nav-item a {
+    margin: 0 10px; } }
+@media screen and (max-width: 768px) {
+  .top-section .navbar .nav-item a {
+    padding: 10px 0; }
+
+  .padding-x {
+    padding: 0 50px; }
+
+  #testimonial .carousel-item {
+    height: 400px; } }
+@media screen and (max-width: 480px) {
+  .padding-x {
+    padding: 0 30px; }
+
+  .site-container, .about-container, .contact-container, .menu-container {
+    max-height: 600px !important; }
+
+  .bottom-section h1 {
+    width: 100%;
+    font-size: 45px;
+    margin-bottom: 30px; }
+
+  .display-none {
+    display: none; } }
+@media screen and (max-width: 360px) {
+  #testimonial .carousel-item {
+    height: 500px; } }
+
+/*# sourceMappingURL=style.css.map */

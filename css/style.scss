@@ -1,0 +1,439 @@
+//VARIABLES
+$primary:#583520;
+$secondary: #c39e61;
+
+
+// CUSTOM font-style: 
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato/lato-regular-webfont.eot');
+    src: url('../fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('../fonts/lato/Lato-Regular.ttf') format('truetype'),
+         url('../fonts/lato/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('../fonts/lato/lato-black-webfont.eot');
+    src: url('../fonts/lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-black-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato/lato-bold-webfont.eot');
+    src: url('../fonts/lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bellefairregular';
+    src: url('../fonts/lato/bellefair-regular-webfont.eot');
+    src: url('../fonts/lato/bellefair-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/bellefair-regular-webfont.woff') format('woff'),
+         url('../fonts/lato/bellefair-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// GLOBAL
+body{background-color: #ebe7de;
+	font-family: latoregular;
+}
+
+.padding-y{padding:50px 0;}
+.padding-x{padding:0 90px;}
+h3{
+	color: $secondary;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-family: latoblack;
+}
+h2{
+	font-family: bellefairregular;
+	text-transform: uppercase;
+	color: $secondary;
+}
+h1{
+	color: $primary;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: latoblack;
+}
+.heading{
+	padding-bottom: 30px;
+	img{
+		width: 80px;
+	}
+}
+
+
+
+// HEADER
+.site-container{
+	background:url('../img/featured/large/home.jpg') no-repeat;
+	background-size: cover;
+	height: 800px;
+	background-attachment: fixed;
+}
+.about-container{
+	background:url('../img/featured/large/about.jpg') no-repeat;
+	background-size: cover;
+	height: 800px;
+	background-attachment: fixed;
+}
+.contact-container, .menu-container{
+	background:url('../img/featured/large/contact.jpg') no-repeat;
+	background-size: cover;
+	height: 800px;
+	background-attachment: fixed;
+}
+	.header-content{
+		background-color: rgba(0, 0, 0, 0.6);
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	.top-section{
+		.navbar{
+			.navbar-brand img{
+				width:250px;
+			}
+			.nav-item a {
+				text-transform: uppercase;
+				color: #fff !important;
+				font-family: latobold;
+				position: relative;
+				display: block;
+			    padding: 30px 0;
+			    margin: 0 20px;
+			    letter-spacing: 1px;
+			    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+			    color: #fff; 
+			}
+			& ::before {
+				content: '';
+			    display: block;
+			    position: absolute;
+			    bottom: 15px;
+			    left: 0;
+			    height: 3px;
+			    width: 100%;
+			    background-color: #fff;
+			    transform-origin: center;
+			    transform: scale(0, 1);
+			    transition: color 0.1s,transform 0.2s ease-out; 
+			}
+			.nav-item a:hover::before, .nav-item a:focus::before {
+				transform-origin: center;
+				transform: scale(1, 1);
+			}
+		}
+
+	}
+
+	.bottom-section{
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		margin-top: 5%;
+		h1{
+			color: #fff;
+			font-size: 70px;
+			line-height: 1.5;
+			width: 80%;
+			margin:0 auto;
+		}
+
+		.fa{
+			margin: 0 5px;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 25px;
+			border: 2px solid $primary;
+			background-color: $primary;
+			color: #fff;
+			transition:0.5s;
+			font-size: 25px;
+
+		&:hover{
+			background-color: $secondary;
+			color: #fff;
+			transition:0.5s;
+			border: 2px solid $primary;
+		}
+		}
+	}
+
+
+
+// BODY 
+.body-content{
+	text-align: center;
+	.body-meat{
+		background-color: #fff;
+		color: $primary;
+		margin-top: -10%;
+	}
+
+	.aboutus-meat{
+		font-weight: 600;
+		line-height: 2;
+	}
+	.aboutus-meat-img{
+		margin:10% 0;
+		box-shadow: 10px 10px 10px $primary;
+
+	}
+	.aboutus-meat-quote{
+		font-weight: 600;
+		letter-spacing: 1px;
+		font-size: 150%;
+		padding: 20px;
+		border-left: 3px solid $primary;
+		margin: 20px 0;
+		text-align: left;
+	}
+	.aboutus-meat-align{
+		text-align: justify;
+	}
+	.icon-name{
+		font-family: bellefairregular;
+		font-size: 35px;
+	}
+
+	.card img{
+		width: 100%;
+	}
+
+
+	form {
+		text-align: left;
+		font-family: latobold;
+		text-transform: uppercase;
+		input, select{
+		    display: block;
+		    width: 100%;
+		    margin-bottom: 10px; 
+		    padding: 10px;
+		    border: 5px solid $primary;  
+		    transition: 0.5s ease-in-out;
+		
+		&:focus{
+			outline: none;
+		    box-shadow: 5px 5px 1px #cacaca;
+		    transition: 0.5s ease-in-out;
+			}
+		}
+		.submit{
+			background-color: $primary;
+			color: #fff;
+			text-transform: uppercase;
+			transition:0.5s;
+
+			&:hover{
+				background-color: $secondary;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+// MENU
+.menu{
+	background:url('../img/menu.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+	background-attachment: fixed;
+	
+
+	&:before{
+		content:"";
+	    display: block;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    background-color: rgba(104, 58, 25, .8);
+	}
+
+	.menu-body{
+		position: relative;
+		text-align: center;
+		h1,h3{
+			color: #fff;
+		}
+	}
+
+
+
+	table{
+		th{
+			text-align: center;
+			font-family: latoblack;
+		}
+
+		th, td{
+			padding: 10px; 
+			list-style: none;
+		}
+		.col-item{
+			width: 60%;
+			text-transform: uppercase;
+			font-size: 33px;
+
+		}
+		.col-price{
+			width: 30%;
+
+		}
+
+		.item{
+			text-transform: uppercase;
+			font-family: latobold;
+			font-size: 20px;
+			
+		}
+		.spanawf{
+				text-transform: none;
+				color: #c39e61;
+				font-family: latoregular;
+				font-size: 16px;
+				margin-top: -5px;
+			}
+		.price{
+			font-size: 35px;
+			font-family: latoblack;
+			text-align: center;
+		}
+	}
+}
+
+
+// TESTIMONIAL
+#testimonial{
+	text-align: center;
+	.testimonial-body{
+		background-color: #fff;
+		color: $primary;
+	}
+
+	.testimonial-content{
+		border-left: 10px solid $primary;
+
+		.fa{
+			color: $primary;
+			font-size: 25px;
+		}
+	}
+
+	.carousel-item{
+		height: 250px;
+		background-color: #ebe7de;
+		.carousel-caption{
+			color: #000;
+			text-align: start;
+			font-size: 20px;
+			.author{
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+
+
+// FOOTER
+footer{
+	text-align: center;
+	background-color: $primary;
+	.footer-body{
+		background-color: #fff;
+		padding: 40px 0 60px 0;
+		ul{
+			list-style: none;
+			padding-left: 0px;
+			font-weight: 600;
+			font-size: 18px;
+		}
+	}
+
+
+	.bot-footer{
+		padding: 20px;
+		color: #fff;
+		font-size: 20px;
+	}
+}
+
+
+
+// MEDIA QUERY
+@media screen and (max-width: 1024px){
+  .navbar-brand img{
+				width:200px !important;
+			}
+	.top-section .navbar .nav-item a{
+		margin: 0 10px;
+		}
+}
+
+@media screen and (max-width: 768px){	
+	.top-section .navbar .nav-item a{
+		padding: 10px 0;
+	}
+	.padding-x{padding:0 50px;}
+
+	#testimonial .carousel-item {
+    height: 400px;
+	}
+}
+
+@media screen and (max-width: 480px){		
+	.padding-x{padding:0 30px;}
+	
+	.site-container, .about-container, .contact-container, .menu-container{
+	max-height: 600px !important;
+	}
+
+	.bottom-section{
+		h1{
+			width: 100%;
+			font-size: 45px;
+			margin-bottom:30px;
+		}
+	}
+
+	.display-none{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 360px){
+	#testimonial .carousel-item {
+    height: 500px;
+	}
+}
