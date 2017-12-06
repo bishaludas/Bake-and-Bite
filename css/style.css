@@ -283,14 +283,26 @@ footer {
   .top-section .navbar .nav-item a {
     padding: 10px 0; }
 
+  .top-section .navbar ::before {
+    background-color: transparent; }
+
   .padding-x {
     padding: 0 50px; }
 
   #testimonial .carousel-item {
     height: 400px; } }
+@media screen and (max-width: 590px) {
+  footer .footer-body {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px; } }
 @media screen and (max-width: 480px) {
   .padding-x {
-    padding: 0 30px; }
+    padding: 0 25px; }
+
+  .padding-y {
+    padding: 40px 0; }
 
   .site-container, .about-container, .contact-container, .menu-container {
     max-height: 600px !important; }
